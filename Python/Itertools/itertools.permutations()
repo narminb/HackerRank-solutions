@@ -1,0 +1,8 @@
+from itertools import permutations
+s,k=input().split()
+
+permutasiyalar=list(permutations(s,int(k)))
+permutasiyalar.sort()
+
+for i in permutasiyalar:
+    print(*i,sep="")
